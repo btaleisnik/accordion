@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  playlist_title: MyString
+  number_of_songs: 1
+  playlist_duration: 1
+  playlist_source: MyString
+  user_id: 1
+
+two:
+  playlist_title: MyString
+  number_of_songs: 1
+  playlist_duration: 1
+  playlist_source: MyString
+  user_id: 1
