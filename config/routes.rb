@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+  root 'soundcloud#index'
+
+  # get '/user' => 'soundcloud#user'
+
+  get '/callback.html' => 'soundcloud#callback'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
