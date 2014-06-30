@@ -1,4 +1,34 @@
 Rails.application.routes.draw do
+
+  root 'tracks#index'
+
+  get 'playlists/new' => 'playlists#new'
+  post 'playlists/create' => 'playlists#create'
+  delete 'playlists/destroy' => 'playlists#destroy'
+  get 'playlists/show'
+  put 'playlists/:id' => 'playlists#update'
+  get 'playlists/index' => 'playlists#index'
+
+
+
+  post 'memberships/create' => 'memberships#create'
+  delete 'memberships/destroy' => 'memberships#destroy'
+
+
+
+  post 'tracks/create' => 'tracks#create'
+  delete 'tracks/destroy' => 'tracks#destroy'
+  get 'tracks/show'
+  get 'tracks/index' => 'tracks#index'
+
+
+
+  get 'users/new' => 'users#new'
+  post 'users/create' => 'users#create'
+  put 'users/:id' => 'users#update'
+  delete 'users/destroy' => 'users#destroy'
+  get 'users/show' => 'users#show'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
