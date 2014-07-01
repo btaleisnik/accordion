@@ -33,7 +33,6 @@ Rails.application.routes.draw do
   put 'users/:id' => 'users#update'
   delete 'users/destroy' => 'users#destroy'
   get 'users/show' => 'users#show'
->>>>>>> ec167e41a76d5439506b21862d121f3f2074e933
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

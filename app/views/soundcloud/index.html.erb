@@ -4,14 +4,21 @@
 		<meta charset="UTF-8">
 		<title>Accordion</title>
 		<script src="http://connect.soundcloud.com/sdk.js"></script>
-		<script src="script.js"></script>
 	</head>
 	<body>
-		<p>Hello World</p>
+		<h1>Accordion</h1>
 
 		<a id="soundcloudauth"><img src="http://connect.soundcloud.com/2/btn-connect-l.png"></a>
 
 
+
+
+
+<div id="putTheWidgetHere"></div>
+<script type="text/JavaScript">
+	var url = prompt("Please enter song url:");
+  SC.oEmbed( url, {color: "ff0066"},  document.getElementById("putTheWidgetHere"));
+</script>
 
 	</body>
 </html>
